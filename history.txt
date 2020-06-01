@@ -1,0 +1,12 @@
+  456  curl -o wilders.csv https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv
+  457  grep "France,2019,PHP" < wilders.csv | wc -l > php_france_2019.csv
+  458  touch php_france_2019.csv
+  459  ls
+  460  grep "France,2019,PHP" < wilders.csv | wc -l > php_france_2019.csv
+  461  grep "JavaScript" < wilders.csv > javascript.csv
+  462  grep "Toulouse" < javascript.csv > toulouse.csv
+  463  grep "Biarritz" < javascript.csv > biarritz.csv
+  464  cat toulouse.csv biarritz.csv | sort -u >javascript_biarritz_toulouse.csv
+  465  history | tail > history.txt
+  466  history | tail -n 11> history.txt
+  467  history | tail -n 12 > history.txt
